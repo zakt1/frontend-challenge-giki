@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.smooth-transition {
+    transition: all 0.3s ease;
+  }
+
+  
+
+  
