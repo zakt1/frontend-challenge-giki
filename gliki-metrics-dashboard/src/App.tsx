@@ -1,16 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './index.css'
-import { UserCarbonFootprint } from './pages/DashboardPage';
-
+import { UserFootprintCloud } from './pages/UserFootprintCloud';
+import { UserTargetMetrics } from './pages/UserTargetMetrics';
 function App() {
   return (
-    <div className="grid grid-rows-2 h-screen bg-slate-600">
-      <div className="relative bg-emerald-500 pt-5 pb-5" >
-      <UserCarbonFootprint userFootprint={7565}  />
+    <div className="grid grid-rows-2 h-screen bg-contrast">
+      <div className="relative  pt-5 pb-5" >
+      <UserFootprintCloud currentFootprint={7565}  />
       </div>
-      <div className="bg-orange-200 p4">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur non quidem doloremque facilis cum perspiciatis, porro deleniti magnam dolorem asperiores adipisci quis in eligendi commodi doloribus similique ipsam, maiores beatae?</p>
+      <div className="p4">
+        <UserTargetMetrics endOfYrTarget={5855} targetYear={2030} longTermTarget={2500} currentFootprint={7565} />
       </div>
     </div>
   );
