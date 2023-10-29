@@ -19,6 +19,12 @@ module.exports = {
         'body': '400',
         'body2': '500'
       }, 
+      colors: {
+        primary: '#5f2b68',
+        secondary: '#c44170',
+        contrast: '#ffffff',
+        background: '#EBD7ED'
+      }
 
     },
   },
